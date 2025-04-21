@@ -11,7 +11,7 @@ function MaritalInfo({ person }) {
 
   if (person.isMarried === false) {
     message = 'I am not married';
-  } else if (person.sex === 'm') {
+  } else if (person.sex === 'm' && person.partnerName !== undefined) {
     message = `${person.partnerName} is my wife`;
   } else {
     message = `${person.partnerName} is my husband`;
